@@ -1,7 +1,7 @@
 class Divisor {
     public ArrayList<Integer> getDivisors(int n) {
         // code here
-         ArrayList<Integer> res = new ArrayList<>();
+        ArrayList<Integer> res = new ArrayList<Integer>();
         for(int i=1;i*i<=n;i++){
             if(n%i==0){ 
             res.add(i);

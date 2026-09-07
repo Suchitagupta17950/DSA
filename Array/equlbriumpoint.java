@@ -1,4 +1,4 @@
-class Solution {
+class equlbriumpoint {
     public static int findEquilibrium(int arr[]) {
         // code here
         int totalsum=0;
