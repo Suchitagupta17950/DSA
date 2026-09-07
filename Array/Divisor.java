@@ -1,4 +1,4 @@
-class Solution {
+class Divisor {
     public ArrayList<Integer> getDivisors(int n) {
         // code here
          ArrayList<Integer> res = new ArrayList<>();
