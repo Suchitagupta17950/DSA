@@ -1,5 +1,5 @@
 package search&sort;
-
+//1st approach
 class Solution {
     public int findMin(int[] nums) {
         int s=0;
@@ -22,3 +22,4 @@ class Solution {
         
     }
 }
+
