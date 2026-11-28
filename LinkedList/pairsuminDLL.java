@@ -31,3 +31,49 @@ class Solution {
         
     }
 }
+
+//brute approach
+
+/*
+class ListNode {
+    int val;
+    ListNode next;
+    ListNode prev;
+    
+    ListNode(int val) {
+        this.val = val;
+        this.next = null;
+        this.prev = null;
+    }
+}
+*/
+
+class Solution {
+    public List<List<Integer>> findPairsWithGivenSum(ListNode head, int target) {
+        // Your code goes here
+
+        ListNode temp1=head;
+        List<List<Integer>> ans=new ArrayList<>();
+
+        while(temp1!=null){
+            ListNode temp2=temp1.next;
+
+            while(temp2!=null && temp1.val + temp2.val<=target){
+                
+                if(temp1.val+temp2.val==target){
+                    List<Integer>ls=new ArrayList<>();
+                    ls.add(temp1.val);
+                    ls.add(temp2.val);
+                    ans.add(ls);
+                    
+
+                }
+                
+                temp2=temp2.next;
+
+            }
+            temp1=temp1.next;
+        }
+        return ans;
+    }
+}
